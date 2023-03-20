@@ -1,0 +1,61 @@
+.radio-box {
+    height: 12.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_row {
+  
+
+        & label {
+          
+            font-size: 2rem;
+            line-height: 32px;
+        }
+    }
+
+}
+
+.radiobtn {
+    display: none;
+
+
+}
+
+
+
+.radiobtn+label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+
+}
+
+.radiobtn+label:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    margin-top: 3px;
+    border-radius: 50%;
+    background: #FFFBFB;
+    border: 1px solid #5F7AC4;
+
+}
+
+.radiobtn+label:after {
+    content: " ";
+    position: absolute;
+    top: -11px;
+    left: 5px;
+    width: 35px;
+    height: 35px;
+    background: url(./images/check.svg) center/ cover no-repeat;
+    opacity: 0;
+    transition: .2s;
+}
+
+.radiobtn:checked+label:after {
+    opacity: 1;
+}

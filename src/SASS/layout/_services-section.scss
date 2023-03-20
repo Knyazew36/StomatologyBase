@@ -1,0 +1,62 @@
+.services {
+    padding-top: 1.8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+
+    &__title {
+        color: #01A0E3;
+    }
+}
+
+.services::before {
+    content: "";
+    background-color: #E4F4FA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.services__row_1 {
+
+    display: flex;
+    font-family: "Miama Nueva";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 5.8rem;
+    text-align: center;
+    align-items: center;
+    color: #4E6D94;
+    margin-bottom: 8rem;
+    position: relative;
+
+    & h2 {
+        opacity: 0;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 37rem;
+        height: 20rem;
+        background: url(./images/logo.svg) center/cover no-repeat;
+        z-index: 20;
+    }
+
+}
+
+.services__row_1 img {
+    width: 22.8rem;
+    margin-left: auto;
+
+}
+
+.services__row_2 {
+    display: flex;
+    flex-wrap: wrap;
+}

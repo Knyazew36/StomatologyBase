@@ -1,0 +1,114 @@
+.history {
+    background-color: #E4F4FA;
+    overflow: hidden;
+
+}
+
+.history_text {
+    flex-basis: 40%;
+}
+
+.animate2 {
+    opacity: 0;
+}
+
+.history__inner_text {
+    padding-top: 8rem;
+    display: flex;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #2A4193;
+    justify-content: space-between;
+    line-height: 3.1rem;
+
+}
+
+.history_text_right {
+    // flex-basis: 50%;
+}
+
+.history__inner-tittle {
+    padding-top: 6rem;
+    display: inline-block;
+    position: relative;
+
+    font-weight: 800;
+    font-size: 13.3rem;
+    background: linear-gradient(109.33deg, rgba(40, 51, 209, 0.48) 40%, rgba(18, 18, 23, 0.53) 68.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    &-right {
+        padding-bottom: 10rem;
+        margin-left: 65%;
+        opacity: 0;
+    }
+
+    &_serv {
+        font-family: 'Muller';
+        font-weight: 800;
+        font-size: 8rem;
+        padding-bottom: 1rem;
+        min-width: 54rem;
+    }
+}
+
+
+.history__inner-subtittle {
+    font-family: "Miama";
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 3.8rem;
+    color: #2B38A8;
+}
+
+
+.text__row1 {
+    padding-top: 8rem;
+    text-align: right;
+    font-size: 16rem;
+    background: linear-gradient(109.33deg, rgba(40, 51, 209, 0.48) 25.88%, rgba(18, 18, 23, 0.53) 68.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.text__row3 {
+    padding-top: 20rem;
+
+    font-size: 14rem;
+    background: linear-gradient(109.33deg, rgba(40, 51, 209, 0.48) 25.88%, rgba(18, 18, 23, 0.53) 68.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+.history {
+
+    &__inner-row-2 {
+        display: flex;
+        font-weight: 800;
+    }
+}
+
+.column {}
+
+.text {
+
+    &__row1 {}
+
+    &__row3 {}
+}
+
+.column-img {
+    flex-basis: 80%;
+    background: url(images/history_photo.webp) bottom/ contain no-repeat;
+
+}

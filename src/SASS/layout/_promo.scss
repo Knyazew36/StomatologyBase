@@ -1,0 +1,51 @@
+.promo {
+    background: url(./images/promo-bg.svg) center/cover no-repeat;
+
+
+}
+
+
+
+.promo__inner {
+    position: relative;
+    min-height: 80vh;
+    overflow: hidden;
+    width: 100%;
+
+    &_box {
+        padding-top: 35rem;
+        margin-left: auto;
+        text-align: center;
+        width: 50%;
+        padding-bottom: 10rem;
+    }
+}
+
+.promo__inner::after {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 52%;
+    background: url(./images/logo.svg) center/cover no-repeat;
+    width: 47rem;
+    height: 23.1rem;
+}
+
+.promo__inner::before {
+    content: "";
+    position: absolute;
+    background: url(./images/promo-mens.webp) top/contain no-repeat;
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+}
+
+.promo__column_1 {
+    position: relative;
+
+    display: block;
+}
+
+.promo__title {
+    text-align: center;
+}

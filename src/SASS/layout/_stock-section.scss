@@ -1,0 +1,41 @@
+.stock {
+    padding-top: 30px;
+    position: relative;
+    background: #E4F4FA;
+   
+}
+
+.stock__inner::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 40%;
+    background: radial-gradient(50% 75.81% at 35.81% 50%, #4ED4EA 0%, #0E7C94 88.02%);
+    opacity: 0.3;
+    filter: blur(60px);
+}
+
+.stock__inner_bg {
+    position: absolute;
+    top: -10rem;
+    left: -8rem;
+    width: 80rem;
+}
+
+.stock__title {
+    font-family: "Muller";
+    font-weight: 800;
+    font-size: 9.6rem;
+    text-align: right;
+    padding-right: 20rem;
+    padding-bottom: 14rem;
+    background: linear-gradient(109.33deg, rgba(40, 51, 209, 0.8) 80%, rgba(18, 18, 23, 0.53) 68.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+
+}

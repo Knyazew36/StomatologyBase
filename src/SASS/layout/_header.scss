@@ -1,0 +1,125 @@
+.header {
+    font-family: "Muller";
+    font-weight: 300;
+    min-height: 20vh;
+    width: 100%;
+}
+
+.header__row_1 {
+    background: #E4F4FA;
+    box-shadow: (0px 1px 3px rgba(0, 0, 0, 0.3))
+}
+
+.header__row_2 {
+    position: relative;
+    animation: topToBottom 1s 0.5s;
+    animation-fill-mode: backwards;
+}
+
+
+.header__row_2_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.9rem 0;
+}
+
+.header__row_2_inner p {
+    font-size: 2.5rem;
+    color: #2C2B2A;
+}
+
+.header__row_top {
+    padding: 1.6rem 0 2.4rem 0;
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    display: flex;
+    color: #27527A;
+    display: flex;
+}
+
+.header__adress {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    &:hover img {
+        animation: leftRigth 0.8s ease;
+    }
+}
+
+.header__adress_link {
+    margin-left: 2rem;
+    max-width: 60%;
+
+
+}
+
+.header__phone {
+    & img {
+        margin-left: 0.5rem;
+    }
+
+    & a {
+        display: flex;
+        align-items: center;
+        transition: all .4s;
+
+        & p {
+            opacity: 0;
+            transition: all .5s;
+        }
+
+    }
+
+
+
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover img {
+        animation: leftRigth 0.8s ease;
+    }
+
+    &:hover a p {
+        opacity: 1;
+    }
+}
+
+.header__phone_link {
+    margin-right: 1rem;
+}
+
+.navigation {
+    font-size: 2.5rem;
+    color: #118FC5;
+
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation__item {
+    margin-right: 2.8rem;
+}
+
+.navigation__link {
+    display: inline-block;
+
+    padding: 0.9rem 2.9rem;
+    background: #B0EAF7;
+    border-radius: 1.2rem;
+    transition: all .3s;
+
+    &:hover {
+        background-color: #118FC5;
+        color: white;
+        animation: pulse .8s ease;
+    }
+}
