@@ -4,12 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = mode === 'development';
 
-const target = devMode ? 'web' : 'browserslist';
+// const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
 
 module.exports = {
   mode,
-  target,
+  // target,
   devtool,
   devServer: {
     port: 3000,
