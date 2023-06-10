@@ -182,7 +182,6 @@
                 </div>
             </div>
         </section>
-
         <section class="services" id="services">
             <div class="container">
                 <div class="services__inner">
@@ -256,9 +255,8 @@
                 </div>
             </div>
         </section>
-
         <section class="stock" id="stock">
-            <div class="container">
+            <!-- <div class="container"> -->
                 <div class="stock__inner">
                     <img src="./images/action-dek2.webp" alt="декор" class="stock__inner_bg">
                     <h2 class="history__inner-tittle history__inner-tittle-right history__mobile">Акции
@@ -303,9 +301,8 @@
 
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
         </section>
-
         <section class="history" id="history">
             <div class="container">
                 <div class="history__inner">
@@ -340,7 +337,6 @@
                 </div>
             </div>
         </section>
-
         <section class="section__comment" id="comment">
             <div class="container">
                 <div class="comment__inner">
@@ -405,47 +401,46 @@
             </div>
         </section>
 
-        <section class="section__form" id="form">
+        <section class="section-form" id="form" >
             <div class="container">
-                <div class="form__inner ">
+                <div class="section-form__inner ">
+                    <h2 class="section-form__title">
+                        Заказать обратный звонок
+                    </h2>
+                    <p class="section-form__text">Мы перезвоним вам в ближайшее время!</p>
+                    <img class="section-form__bg" src="./images/logo-form.webp" alt="bg">
+                    <!-- <img class="section-form__bg" src="./images/form-dec.webp" alt="bg"> -->
+                <form action="#" class="form" data-parsley-validate="" id="tg" >
+                    <div class="form__inputs">
+                        <input type="text" class="form__input"  data-parsley-validate="" required id="name" placeholder="Имя,Фамилия" >
+                        <input type="text" required id="phone" class="form__input" data-parsley-phone data-mask-phone placeholder="Телефон">
+                    </div>
+              
+                    <div class="form__checkboxes">
+                        <div class="form__checkboxes-item">
+                            <input type="checkbox" 
+                            checked
+                            id="first-btn"  value="Воронеж" name="radiobtn"
+                            data-parsley-mincheck="1"  class="form__checkboxes-check">
 
-                    <form action="#" class="form" id="tg">
-                        <div class="success"></div>
-                        <h2 class="form__title">
-                            Заказать обратный звонок
-                        </h2>
-                        <p class="form__text">Мы перезвоним вам в ближайшее время!</p>
-                        <div class="form__row">
-                            <div class="form__row_input">
-                                <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Ваше Имя и Фамилия" id="name"
-                                        required>
-                                    <label for="name" class="form__label">Ваше Имя и Фамилия</label>
-                                </div>
-                                <div class="form__group">
-                                    <input type="tel" class="form__input" placeholder="Ваш телефон" id="phone" required>
-                                    <label for="tel" class="form__label">Ваш телефон</label>
-                                </div>
-                            </div>
-                            <div class="radio-box">
-                                <div class="radio-box_row">
-                                    <input class="radiobtn" id="first-btn" type="radio" value="Воронеж" name="radiobtn"
-                                        required checked>
-                                    <label for="first-btn">Воронеж</label>
-                                </div>
-                                <div class="radio-box_row">
-                                    <input class="radiobtn" id="second-btn" type="radio" value="Нововоронеж"
-                                        name="radiobtn" required>
-                                    <label for="second-btn">Нововоронеж</label>
-                                </div>
-                            </div>
+                            <p class="form__checkboxes-city">Воронеж</p>
                         </div>
-                        <div class="form__bottom">
-                            <button class="btn_form">Перезвонить<img src="./images/Arrow5.svg"
-                                    alt="Кнопка отправить"></button>
-                            <p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных</p>
+                        <div class="form__checkboxes-item">
+                            <input type="checkbox" 
+                            id="second-btn" value="Нововоронеж"
+                           data-parsley-mincheck="1" 
+                            class="form__checkboxes-check">
+                            <p class="form__checkboxes-city">Нововоронеж</p>
                         </div>
-                    </form>
+      
+                    </div>
+                    <div class="form__bottom">
+                        <button class="form__button" type="submit">Перезвонить<img src="./images/Arrow5.svg"
+                                   alt="Кнопка отправить">
+                         </button>
+                        <p class="form__subtext">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных</p>
+                    </div>
+                </form>
                 </div>
             </div>
         </section>
@@ -460,19 +455,13 @@
                         <p class="footer__adress">
                             г. Воронеж <br>
                             ул. Ворошилова, д. 2
-
                         </p>
-
                         <a href="tel:+79994023003" class="footer__adress">
                             Телефон<br>8-(999)-402-30-03
-
-
                         </a>
                         <span> &#10230;</span>
                     </div>
-
                     <div class="footer__carts footer__carts_vrn">
-
                     </div>
                 </div>
                 <div class="footer__row">

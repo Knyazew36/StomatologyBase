@@ -5,6 +5,7 @@ import './index.scss';
 import 'jquery';
 import './JS/masked';
 import './JS/micromodal';
+import './JS/parlsey';
 import MicroModal from 'micromodal';
 
 $(function () {
@@ -48,7 +49,7 @@ $(function () {
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const form = $('#tg');
-  const success = $('.success');
+  // const success = $('.success');
   let formText = $('.form__text');
 
   form.on('submit', function (e) {
@@ -76,22 +77,12 @@ $(function () {
         text: message,
       })
       .then((res) => {
-        success.animate(
-          {
-            left: 0,
-          },
-          {
-            duration: 2000,
-            complete: function () {
-              success.fadeOut();
-              MicroModal.show('modal-1');
-              formText.text('Ваша заявка направлена, ожидайте звонка!');
-              formText.addClass('animate__animated animate__pulse');
-              name.val('');
-              phone.val('');
-            },
-          }
-        );
+        // success.fadeOut();
+        MicroModal.show('modal-1');
+        formText.text('Ваша заявка направлена, ожидайте звонка!');
+        formText.addClass('animate__animated animate__pulse');
+        name.val('');
+        phone.val('');
       })
       .catch((err) => {
         console.warn(err);

@@ -11,7 +11,6 @@
 @import './SASS/./layout/form';
 @import './SASS/components/fonts';
 @import './SASS/components/chekbox';
-@import './SASS/components/btn-form';
 @import './SASS/components/cartУслуги';
 @import './SASS/layout/services-section';
 @import './SASS/layout/stock-section';
@@ -326,6 +325,12 @@ h6 {
 .swiper {
   max-width: 90%;
   height: 100%;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    padding-left: 10px;
+  }
 }
 
 .swiper-wrapper {
