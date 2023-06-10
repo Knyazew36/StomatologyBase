@@ -209,6 +209,7 @@
   .comment {
     width: 52rem;
   }
+
   .btn_form {
     & img {
       margin-right: 1rem;
@@ -221,6 +222,104 @@
 
   .footer__inner {
     padding: 5rem 2rem 2rem 2rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .container {
+    padding: 0;
+  }
+
+  .header__adress {
+    max-width: 28rem;
+  }
+
+  .promo__inner::before {
+    height: 85%;
+    width: 80%;
+    opacity: 0.3;
+    z-index: 0;
+    transform: translateX(-25rem);
+  }
+
+  .header__row_top {
+    padding: 0 1rem;
+  }
+
+  .promo__inner_box {
+    margin: 0 auto;
+    position: relative;
+    z-index: 20;
+    padding-top: 26rem;
+    width: 100%;
+  }
+
+  .promo__inner::after {
+    width: 48rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sity__inner {
+    flex-direction: column;
+  }
+
+  .card-tour {
+    min-width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .history__inner_text {
+    display: block;
+  }
+
+  .history_text {
+    margin-bottom: 3rem;
+  }
+
+  .history__inner-tittle {
+    padding-right: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 11rem;
+  }
+
+  .history__inner-subtittle {
+    margin-top: 5rem;
+  }
+
+  .header__row_1 {
+    padding-bottom: 3rem !important;
+  }
+
+  .footer__adress-box {
+    margin: 0 auto;
+    width: 80%;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .footer__adress {
+    margin: 0 auto;
+  }
+
+  .stock {
+    padding-bottom: 0;
+  }
+
+  .history__inner-tittle-right {
+    padding-bottom: 0;
+  }
+
+  .upbtn {
+    width: 206px;
+    height: 206px;
+  }
+
+  .services__row_1 {
+    &::after {
+      display: none;
+    }
   }
 }
 
