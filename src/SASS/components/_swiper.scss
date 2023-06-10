@@ -2,7 +2,7 @@
   width: calc(100% + 20px);
   margin-left: -10px;
   cursor: pointer;
-
+  overflow: hidden;
   &-slide {
     padding: 20px;
     &_imgBox {
