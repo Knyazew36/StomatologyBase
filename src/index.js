@@ -6,50 +6,15 @@ import 'jquery';
 import './JS/masked';
 import './JS/micromodal';
 import './JS/parlsey';
+import './JS/swiper';
 import MicroModal from 'micromodal';
 
 $(function () {
-  const $html = $('html');
-  $('#phone').mask('+7 (999) 999-99-99');
-
-  const swiper = new Swiper('.swiper', {
-    centeredSlides: true,
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      draggable: true,
-    },
-    direction: 'horizontal',
-    navigation: {
-      nextEl: '.swiper-button-right',
-      prevEl: '.swiper-button-left',
-    },
-    mousewheel: {
-      invert: true,
-    },
-    breakpoints: {
-      300: {
-        slidesPerView: 1,
-        spaceBetween: 26,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 25,
-      },
-      890: {
-        slidesPerView: 3,
-        scrollbar: false,
-        spaceBetween: 25,
-        loop: true,
-      },
-    },
-  });
-
   const TOKEN = '5991442621:AAHmPaid3-QaxEkGdlhBhz_izeGYJ1n5j1M';
   const CHAT_ID = '-672673172';
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const form = $('#tg');
-  // const success = $('.success');
   let formText = $('.form__text');
 
   form.on('submit', function (e) {
@@ -77,7 +42,6 @@ $(function () {
         text: message,
       })
       .then((res) => {
-        // success.fadeOut();
         MicroModal.show('modal-1');
         formText.text('Ваша заявка направлена, ожидайте звонка!');
         formText.addClass('animate__animated animate__pulse');

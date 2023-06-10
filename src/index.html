@@ -256,20 +256,12 @@
             </div>
         </section>
         <section class="stock" id="stock">
-            <!-- <div class="container"> -->
+            <div class="container">
                 <div class="stock__inner">
                     <img src="./images/action-dek2.webp" alt="декор" class="stock__inner_bg">
                     <h2 class="history__inner-tittle history__inner-tittle-right history__mobile">Акции
                     </h2>
                     <div class="slider">
-                        <div class="swiper-button-left">
-                            &#129044;
-                        </div>
-                        <div class="swiper-button-right">
-                            &#129046;
-                        </div>
-                        <div class="swiper">
-                            <div class="swiper-scrollbar"></div>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide ">
                                     <div class="swiper-slide_imgBox">
@@ -292,7 +284,7 @@
 
                                 <div class="swiper-slide">
                                     <div class="swiper-slide_imgBox">
-                                        <img src="./images/stock-4.webp" alt="слайд" class="swiper-slide_img">
+                                        <img src="./images/stock-4.webp" alt="слайд" class="swiper-slide_img swiper-slide_img_4">
                                     </div>
                                     <h3 class="swiper-slide_title">Подарочный сертификат</h3>
                                     <p class="swiper-slide_text">В продаже имеются подарочные сертификаты</p>
@@ -301,7 +293,7 @@
 
                         </div>
                     </div>
-                <!-- </div> -->
+                </div>
         </section>
         <section class="history" id="history">
             <div class="container">
@@ -409,11 +401,10 @@
                     </h2>
                     <p class="section-form__text">Мы перезвоним вам в ближайшее время!</p>
                     <img class="section-form__bg" src="./images/logo-form.webp" alt="bg">
-                    <!-- <img class="section-form__bg" src="./images/form-dec.webp" alt="bg"> -->
                 <form action="#" class="form" data-parsley-validate="" id="tg" >
                     <div class="form__inputs">
                         <input type="text" class="form__input"  data-parsley-validate="" required id="name" placeholder="Имя,Фамилия" >
-                        <input type="text" required id="phone" class="form__input" data-parsley-phone data-mask-phone placeholder="Телефон">
+                        <input type="tel" required id="phone" class="form__input" data-parsley-phone data-mask-phone placeholder="Телефон">
                     </div>
               
                     <div class="form__checkboxes">
