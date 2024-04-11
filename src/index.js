@@ -15,6 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   form.on("submit", function (e) {
     e.preventDefault();
+
     const name = $("#name");
     const phone = $("#phone");
     const sity = $("input[name='radiobtn']:checked").val(); // Получаем значение выбранного города
@@ -34,27 +35,35 @@ window.addEventListener("DOMContentLoaded", () => {
     const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
     const message = `<b>Заявка с сайта стоматологии</b>\n <b>Имя отправителя:</b> ${name.val()}\n <b>Телефон:</b> ${phone.val()}\n <b>Город:</b> ${sity}`;
-
     $(".form__button").attr("disabled", "true");
-    axios
-      .post(URI_API, {
-        chat_id: CHAT_ID,
-        parse_mode: "html",
-        text: message,
-      })
-      .then((res) => {
-        formText.text("Ваша заявка направлена, ожидайте звонка!");
-        formText.addClass("animate__animated animate__pulse");
-        name.val("");
-        phone.val("");
-        MicroModal.show("modal-1");
-      })
-      .catch((err) => {
-        console.error(err);
-        formText.text(
-          "Произошла ошибка при отправке заявки. Пожалуйста, попробуйте позже."
-        );
-      });
+
+    grecaptcha.ready(function () {
+      grecaptcha
+        .execute("6LeQS7gpAAAAAB4wPkTagcE1vJWPFCDvHz9bt5sS", {
+          action: "submit",
+        })
+        .then(function (token) {
+          axios
+            .post(URI_API, {
+              chat_id: CHAT_ID,
+              parse_mode: "html",
+              text: message,
+            })
+            .then((res) => {
+              formText.text("Ваша заявка направлена, ожидайте звонка!");
+              formText.addClass("animate__animated animate__pulse");
+              name.val("");
+              phone.val("");
+              MicroModal.show("modal-1");
+            })
+            .catch((err) => {
+              console.error(err);
+              formText.text(
+                "Произошла ошибка при отправке заявки. Пожалуйста, попробуйте позже."
+              );
+            });
+        });
+    });
   });
 });
 
