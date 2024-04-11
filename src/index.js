@@ -16,6 +16,12 @@ window.addEventListener("DOMContentLoaded", () => {
   form.on("submit", function (e) {
     e.preventDefault();
 
+    const security = $("#security");
+
+    if (security.val() !== "4") {
+      return;
+    }
+
     const name = $("#name");
     const phone = $("#phone");
     const sity = $("input[name='radiobtn']:checked").val(); // Получаем значение выбранного города
