@@ -1,6 +1,6 @@
-import $ from 'jquery';
+import $ from "jquery";
 $(() => {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper(".swiper", {
     centeredSlides: true,
     autoplay: {
       delay: 5000,
@@ -8,13 +8,13 @@ $(() => {
     loop: true,
 
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: ".swiper-scrollbar",
       draggable: true,
     },
-    direction: 'horizontal',
+    direction: "horizontal",
     navigation: {
-      nextEl: '.swiper-button-right',
-      prevEl: '.swiper-button-left',
+      nextEl: ".swiper-button-right",
+      prevEl: ".swiper-button-left",
     },
     mousewheel: {
       invert: true,

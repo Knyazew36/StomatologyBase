@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     $(
-      ".navigation__item a, .header__adress_link, .promo__inner_box a, .btn__cart"
+      ".navigation__item a, .header__adress_link, .promo__inner_box a, .btn__cart",
     ).on("click", function (e) {
       e.preventDefault();
 
@@ -35,7 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
           scrollTop: offset,
         },
         200,
-        animatePulse($(href + ""))
+        animatePulse($(href + "")),
       );
     });
 
@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded", () => {
     cartVrn.on("mouseenter", function () {
       if (cartVrnON == 0) {
         cartVrn.html(
-          '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A71f6a8f8d71e27dd63da84db9284abce6645b317610a9e231eb9e26202cadae1&amp;source=constructor" frameborder="0"></iframe>'
+          '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A71f6a8f8d71e27dd63da84db9284abce6645b317610a9e231eb9e26202cadae1&amp;source=constructor" frameborder="0"></iframe>',
         );
         cartVrnON += 1;
       }
@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", () => {
     cartNov.on("mouseenter", function () {
       if (cartNovOn == 0) {
         cartNov.html(
-          '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeabd1b3e011008b7b74bd568212831ef4fbba1463fbeb91b432276cce9a306a5&amp;source=constructor" frameborder="0"></iframe>'
+          '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeabd1b3e011008b7b74bd568212831ef4fbba1463fbeb91b432276cce9a306a5&amp;source=constructor" frameborder="0"></iframe>',
         );
         cartNovOn += 1;
       }
@@ -82,7 +82,7 @@ window.addEventListener("DOMContentLoaded", () => {
         {
           scrollTop: 0,
         },
-        300
+        300,
       );
       return false;
     });
@@ -99,7 +99,7 @@ window.addEventListener("DOMContentLoaded", () => {
         $(".history__inner-tittle-right").offset().top - 800
       ) {
         $(".history__inner-tittle-right").addClass(
-          "animate__animated animate__backInRight"
+          "animate__animated animate__backInRight",
         );
         $(".history__inner-tittle-right").fadeTo(1);
       }
@@ -110,7 +110,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
       if ($(this).scrollTop() > $(".services__row_1 h2").offset().top - 800) {
         $(".services__row_1 h2").addClass(
-          "animate__animated animate__backInLeft"
+          "animate__animated animate__backInLeft",
         );
         $(".services__row_1 h2").fadeTo(1);
       }

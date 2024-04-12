@@ -173,9 +173,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -183,9 +183,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -194,9 +194,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -240,8 +240,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type='checkbox'],
-[type='radio'] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -249,8 +249,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -258,7 +258,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -266,7 +266,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type='search']::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -312,11 +312,11 @@ template {
 }
 
 body {
-  font-family: 'Muller';
+  font-family: "Muller";
 }
 
 .header {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 300;
   min-height: 20vh;
   width: 100%;
@@ -439,7 +439,7 @@ body {
 }
 
 .promo__inner::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 1%;
   left: 52%;
@@ -449,7 +449,7 @@ body {
 }
 
 .promo__inner::before {
-  content: '';
+  content: "";
   position: absolute;
   background: url(./images/promo-mens.webp) top/contain no-repeat;
   width: 50%;
@@ -470,7 +470,7 @@ body {
   display: block;
   margin: 0 auto;
   padding: 6rem 0;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 400;
   font-size: 4.9rem;
   text-align: center;
@@ -736,7 +736,7 @@ body {
   opacity: 0;
 }
 .history__inner-tittle_serv {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 800;
   font-size: 8rem;
   padding-bottom: 1rem;
@@ -744,7 +744,7 @@ body {
 }
 
 .history__inner-subtittle {
-  font-family: 'Miama';
+  font-family: "Miama";
   display: block;
   text-align: center;
   font-style: italic;
@@ -795,7 +795,7 @@ body {
   z-index: 1;
 }
 .section__comment::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -806,7 +806,7 @@ body {
   opacity: 0.8;
 }
 .section__comment::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -832,7 +832,7 @@ body {
 }
 
 .comment__row-1::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3rem;
   left: 0;
@@ -844,7 +844,7 @@ body {
 }
 
 .comment__text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -860,7 +860,7 @@ body {
 }
 
 .comment__row-2 {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 1.6rem;
   color: #000000;
@@ -989,7 +989,9 @@ body {
 .section-form__inner {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 0 auto;
   max-width: 90%;
   background: white;
@@ -998,7 +1000,7 @@ body {
   padding: 5rem 3.1rem 2.2rem 3.3rem;
 }
 .section-form__title {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 700;
   font-size: 4.1rem;
   line-height: 4.1rem;
@@ -1006,7 +1008,7 @@ body {
 }
 .section-form__text {
   margin-top: 1.7rem;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 400;
   font-size: 3.1rem;
   line-height: 3.1rem;
@@ -1029,7 +1031,7 @@ body {
   background: #fffbfa;
   border: 1px solid #707b97;
   border-radius: 0.4rem;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
@@ -1098,27 +1100,27 @@ body {
 }
 
 @font-face {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-display: swap;
-  src: url('./fonts/MullerRegular.woff');
+  src: url("./fonts/MullerRegular.woff");
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-display: swap;
-  src: url('./fonts/MullerLight.woff');
+  src: url("./fonts/MullerLight.woff");
   font-weight: 300;
 }
 @font-face {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-display: swap;
-  src: url('./fonts/MullerExtraBold.woff');
+  src: url("./fonts/MullerExtraBold.woff");
   font-weight: 800;
 }
 @font-face {
-  font-family: 'Miama';
+  font-family: "Miama";
   font-display: swap;
-  src: url('./fonts/miamanueva.woff');
+  src: url("./fonts/miamanueva.woff");
 }
 .radio-box {
   height: 12.2rem;
@@ -1142,7 +1144,7 @@ body {
 }
 
 .radiobtn + label:before {
-  content: ' ';
+  content: " ";
   position: absolute;
   left: 0;
   width: 33px;
@@ -1154,7 +1156,7 @@ body {
 }
 
 .radiobtn + label:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: -11px;
   left: 5px;
@@ -1235,7 +1237,7 @@ body {
 }
 
 .services::before {
-  content: '';
+  content: "";
   background-color: #e4f4fa;
   position: absolute;
   top: 0;
@@ -1247,7 +1249,7 @@ body {
 
 .services__row_1 {
   display: flex;
-  font-family: 'Miama Nueva';
+  font-family: "Miama Nueva";
   font-style: italic;
   font-weight: 400;
   font-size: 5.8rem;
@@ -1261,7 +1263,7 @@ body {
   opacity: 0;
 }
 .services__row_1::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1288,7 +1290,7 @@ body {
 }
 
 .stock__inner::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 20%;
   left: 50%;
@@ -1312,7 +1314,7 @@ body {
 }
 
 .stock__title {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 800;
   font-size: 9.6rem;
   text-align: right;
@@ -1351,7 +1353,7 @@ body {
 }
 
 .upbtn:after {
-  content: 'ВВЕРХ';
+  content: "ВВЕРХ";
   transform: rotate(-45deg);
   position: relative;
   display: block;
@@ -1381,7 +1383,7 @@ body {
 }
 #menu-btn:before,
 #menu-btn:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 8px;
   background-color: #15a9e5;
@@ -1398,7 +1400,7 @@ body {
   transform-origin: right center;
 }
 #menu-btn .text {
-  font-family: 'Candal', sans-serif;
+  font-family: "Candal", sans-serif;
   display: block;
   position: absolute;
   top: 38px;
@@ -1482,7 +1484,7 @@ body {
   animation-fill-mode: backwards;
 }
 .modal__text {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 3.4rem;
@@ -1554,19 +1556,19 @@ body {
   display: block;
 }
 
-.micromodal-slide[aria-hidden='false'] .modal__overlay {
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
   animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden='false'] .modal__container {
+.micromodal-slide[aria-hidden="false"] .modal__container {
   animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden='true'] .modal__overlay {
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
   animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden='true'] .modal__container {
+.micromodal-slide[aria-hidden="true"] .modal__container {
   animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
@@ -1585,7 +1587,7 @@ body {
 
 .title_main {
   display: inline-block;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 400;
   font-size: 5.8rem;
   line-height: 5.8rem;
@@ -1596,7 +1598,7 @@ body {
 }
 
 .title_secondary {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 3.4rem;
@@ -1914,7 +1916,7 @@ h6 {
 
 .swiper-slide_title {
   margin-top: 1rem;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 800;
   font-size: 2.4rem;
   text-align: center;
@@ -1923,7 +1925,7 @@ h6 {
 }
 
 .swiper-slide_text {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 300;
   font-size: 1.4rem;
   text-align: center;

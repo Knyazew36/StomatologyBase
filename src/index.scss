@@ -1,23 +1,23 @@
-@import './libs/normalize';
-@import './SASS/./abstracts/variable';
-@import './SASS/./base/base';
-@import './SASS/./layout/header';
-@import './SASS/./layout/promo';
-@import './SASS/./layout/section-subtitle';
-@import './SASS/./abstracts/animated';
-@import './SASS/./layout/section-history';
-@import './SASS/./layout/section-comment';
-@import './SASS/./layout/footer';
-@import './SASS/./layout/form';
-@import './SASS/components/fonts';
-@import './SASS/components/chekbox';
-@import './SASS/components/cartУслуги';
-@import './SASS/layout/services-section';
-@import './SASS/layout/stock-section';
-@import './SASS/components/btnToUp';
-@import './SASS/components/menuPhone';
-@import './SASS/components/modal';
-@import './SASS/components/swiper';
+@import "./libs/normalize";
+@import "./SASS/./abstracts/variable";
+@import "./SASS/./base/base";
+@import "./SASS/./layout/header";
+@import "./SASS/./layout/promo";
+@import "./SASS/./layout/section-subtitle";
+@import "./SASS/./abstracts/animated";
+@import "./SASS/./layout/section-history";
+@import "./SASS/./layout/section-comment";
+@import "./SASS/./layout/footer";
+@import "./SASS/./layout/form";
+@import "./SASS/components/fonts";
+@import "./SASS/components/chekbox";
+@import "./SASS/components/cartУслуги";
+@import "./SASS/layout/services-section";
+@import "./SASS/layout/stock-section";
+@import "./SASS/components/btnToUp";
+@import "./SASS/components/menuPhone";
+@import "./SASS/components/modal";
+@import "./SASS/components/swiper";
 
 .main {
   overflow: hidden;
@@ -29,7 +29,7 @@
 
 .title_main {
   display: inline-block;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-weight: 400;
   font-size: 5.8rem;
   line-height: 5.8rem;
@@ -40,7 +40,7 @@
 }
 
 .title_secondary {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 3.4rem;
@@ -327,4 +327,4 @@ h6 {
   text-decoration: underline;
 }
 
-@import './SASS/components/media';
+@import "./SASS/components/media";

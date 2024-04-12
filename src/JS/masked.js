@@ -62,7 +62,7 @@
               placeholder: a.mask.placeholder,
               completed: null,
             },
-            g
+            g,
           )),
           (i = a.mask.definitions),
           (j = []),
@@ -72,10 +72,10 @@
             "?" == b
               ? (n--, (k = a))
               : i[b]
-              ? (j.push(new RegExp(i[b])),
-                null === l && (l = j.length - 1),
-                k > a && (m = j.length - 1))
-              : j.push(null);
+                ? (j.push(new RegExp(i[b])),
+                  null === l && (l = j.length - 1),
+                  k > a && (m = j.length - 1))
+                : j.push(null);
           }),
           this.trigger("unmask").each(function () {
             function h() {
@@ -155,9 +155,9 @@
                       s(c, e - 1),
                       a.preventDefault())
                     : 13 === f
-                    ? v.call(this, a)
-                    : 27 === f &&
-                      (B.val(E), B.caret(0, A()), a.preventDefault());
+                      ? v.call(this, a)
+                      : 27 === f &&
+                        (B.val(E), B.caret(0, A()), a.preventDefault());
               }
             }
             function x(b) {
@@ -219,10 +219,10 @@
                 a
                   ? z()
                   : k > f + 1
-                  ? g.autoclear || C.join("") === D
-                    ? (B.val() && B.val(""), y(0, n))
-                    : z()
-                  : (z(), B.val(B.val().substring(0, f + 1))),
+                    ? g.autoclear || C.join("") === D
+                      ? (B.val() && B.val(""), y(0, n))
+                      : z()
+                    : (z(), B.val(B.val().substring(0, f + 1))),
                 k ? b : l
               );
             }

@@ -1,2 +1,2 @@
-import MicroModal from 'micromodal';
+import MicroModal from "micromodal";
 MicroModal.init();
