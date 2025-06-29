@@ -17,6 +17,7 @@
 
 .cart {
   padding: 0 1rem;
+
   max-width: 39rem;
   border-radius: 1rem;
 
@@ -52,7 +53,8 @@
 
   & tr {
     display: block;
-    height: 6rem;
+    padding: 2rem;
+    // height: 6rem;
   }
 }
 

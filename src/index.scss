@@ -1,23 +1,23 @@
-@import "./libs/normalize";
-@import "./SASS/./abstracts/variable";
-@import "./SASS/./base/base";
-@import "./SASS/./layout/header";
-@import "./SASS/./layout/promo";
-@import "./SASS/./layout/section-subtitle";
-@import "./SASS/./abstracts/animated";
-@import "./SASS/./layout/section-history";
-@import "./SASS/./layout/section-comment";
-@import "./SASS/./layout/footer";
-@import "./SASS/./layout/form";
-@import "./SASS/components/fonts";
-@import "./SASS/components/chekbox";
-@import "./SASS/components/cartУслуги";
-@import "./SASS/layout/services-section";
-@import "./SASS/layout/stock-section";
-@import "./SASS/components/btnToUp";
-@import "./SASS/components/menuPhone";
-@import "./SASS/components/modal";
-@import "./SASS/components/swiper";
+// @import "./libs/normalize";
+@import './SASS/./abstracts/variable';
+@import './SASS/./base/base';
+@import './SASS/./layout/header';
+@import './SASS/./layout/promo';
+@import './SASS/./layout/section-subtitle';
+@import './SASS/./abstracts/animated';
+@import './SASS/./layout/section-history';
+@import './SASS/./layout/section-comment';
+@import './SASS/./layout/footer';
+@import './SASS/./layout/form';
+@import './SASS/components/fonts';
+@import './SASS/components/chekbox';
+@import './SASS/components/cart';
+@import './SASS/layout/services-section';
+@import './SASS/layout/stock-section';
+@import './SASS/components/btnToUp';
+@import './SASS/components/menuPhone';
+@import './SASS/components/modal';
+@import './SASS/components/swiper';
 
 .main {
   overflow: hidden;
@@ -29,7 +29,7 @@
 
 .title_main {
   display: inline-block;
-  font-family: "Muller";
+  font-family: 'Muller';
   font-weight: 400;
   font-size: 5.8rem;
   line-height: 5.8rem;
@@ -40,7 +40,7 @@
 }
 
 .title_secondary {
-  font-family: "Muller";
+  font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 3.4rem;
@@ -84,98 +84,100 @@
 }
 
 /*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+// * {
+//   padding: 0;
+//   margin: 0;
+//   border: 0;
+// }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+// *,
+// *:before,
+// *:after {
+//   box-sizing: border-box;
+// }
 
-a {
-  color: inherit;
-}
+// a {
+//   color: inherit;
+// }
 
-:focus,
-:active {
-  outline: none;
-}
+// :focus,
+// :active {
+//   outline: none;
+// }
 
-a:focus,
-a:active {
-  outline: none;
-}
+// a:focus,
+// a:active {
+//   outline: none;
+// }
 
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
+// nav,
+// footer,
+// header,
+// aside {
+//   display: block;
+// }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 10px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
-}
+@layer base {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 10px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
 
-input,
-button,
-textarea {
-  font-family: inherit;
-}
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
 
-input::-ms-clear {
-  display: none;
-}
+  input::-ms-clear {
+    display: none;
+  }
 
-button {
-  cursor: pointer;
-}
+  button {
+    cursor: pointer;
+  }
 
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
 
-a,
-a:visited {
-  text-decoration: none;
-}
+  a,
+  a:visited {
+    text-decoration: none;
+  }
 
-a:hover {
-  text-decoration: none;
-}
+  a:hover {
+    text-decoration: none;
+  }
 
-ul li {
-  list-style: none;
-  max-width: 100%;
-}
+  ul li {
+    list-style: none;
+    max-width: 100%;
+  }
 
-img {
-  vertical-align: top;
-  max-width: 100%;
-}
+  img {
+    vertical-align: top;
+    max-width: 100%;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
 }
 
 /*--------------------*/
@@ -327,4 +329,4 @@ h6 {
   text-decoration: underline;
 }
 
-@import "./SASS/components/media";
+@import './SASS/components/media';
