@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^(lang)($|/) - [L]
+RewriteRule !\.(otf|ttf|txt|json|css|js|svg|png|jpg|ico|mp4)$ index.html [NC,L]
